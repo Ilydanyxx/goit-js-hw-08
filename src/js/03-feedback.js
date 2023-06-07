@@ -19,7 +19,7 @@ function onLoad() {
         if (!data) return;
         formData = JSON.parse(data);
         Object.entries(formData).forEach(([key, val]) => {
-            form.element[key].value = val;
+            form.elements[key].value = val;
         });
     } catch (error) {
         console.log(error.message);
